@@ -44,7 +44,7 @@ public class ListTheDays {
     }
         return null;}
 
-    public boolean existDay(String day) {
+    public boolean existDay(String day, boolean b) {
         return dayWheeks.contains(day);
     }
 

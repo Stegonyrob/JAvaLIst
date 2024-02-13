@@ -44,4 +44,31 @@ public class ListTheDaysTests {
         assertEquals(0, list.getLenghtList());
 
     }
+
+    @Test
+    void testExistDay() {
+        ListTheDays list = new ListTheDays();
+        list.createListOfDayTheWeek();
+        list.getDay(0);
+        assertEquals("Lunes" , list.getDay(0));
+        //no me quedo claro como verificar la existencia ????
+    }
+
+    @Test
+    void testGetDay() {
+        ListTheDays list = new ListTheDays();
+        list.createListOfDayTheWeek();
+        list.getDay(0);
+        assertEquals("Lunes" , list.getDay(0));
+        
+    }
+
+    @Test
+    void testGetLenghtList() {
+        ListTheDays list = new ListTheDays();
+        list.createListOfDayTheWeek();
+        list.getLenghtList();
+        assertEquals(7 , list.getLenghtList());
+        
+    }
 }
